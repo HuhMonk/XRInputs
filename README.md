@@ -25,6 +25,8 @@ XRInputs.OnSecondaryButtonPressed += OnSecondaryDown;
 XRInputs.OnSecondaryButtonReleased += OnSecondaryUp;
 XRInputs.OnMenuButtonPressed += OnMenuDown;
 XRInputs.OnMenuButtonReleased += OnMenuUp;
+XRInputs.OnLeftHandDisconnect += OnLeftControllerDisconnect;
+XRInputs.OnRightHandDisconnect += OnRightControllerDisconnect;
 ```
 
 ## Callings
