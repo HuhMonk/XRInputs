@@ -31,10 +31,6 @@ XRInputs.OnMenuButtonReleased += OnMenuUp;
 XRInputs.OnRightControllerDisconnect += OnRightControllerDisconnection;
 XRInputs.OnLeftControllerReconnect += OnLeftControllerReconnection;
 ```
-### Make sure the functions you call have
-```csharp
-public void Function(XRHand Hand)
-```
 ## Callings
 
 ### Grip : Side Button
