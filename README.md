@@ -1,7 +1,3 @@
-# XRInputs
-A Unity XR Extension that allows you to call inputs from vr controllers easier
-
-
 # Documentation
 
 
@@ -11,24 +7,34 @@ using XRInputs;
 ```
 
 ## Actions
-If You Want To Call A Function When Action Is Triggered
+If You Want To Call A Function When Action Is Triggered : make sure before XRInputs.On(Specify hand Right or Left then the rest)GripPressed
 ```csharp
-XRInputs.OnThumbStickPressed += OnThumbstickDown;
-XRInputs.OnThumbStickPressed += OnThumbStickUp;
-XRInputs.OnGripPressed += OnGripDown;
-XRInputs.OnGripReleased += OnGripUp;
-XRInputs.OnTriggerPressed += OnTriggerDown;
-XRInputs.OnTriggerReleased += OnTriggerUp;
-XRInputs.OnPrimaryButtonPressed += OnPrimaryDown;
-XRInputs.OnPrimaryButtonReleased += OnPrimaryUp;
-XRInputs.OnSecondaryButtonPressed += OnSecondaryDown;
-XRInputs.OnSecondaryButtonReleased += OnSecondaryUp;
+XRInputs.OnRightThumbStickPressed += OnRightThumbstickDown;
+XRInputs.OnLeftThumbStickReleased += OnLeftThumbStickUp;
+
+XRInputs.OnRightGripPressed += OnRightGripDown;
+XRInputs.OnLeftGripReleased += OnLeftGripUp;
+
+XRInputs.OnRightTriggerPressed += OnRightTriggerDown;
+XRInputs.OnLeftTriggerReleased += OnLeftTriggerUp;
+
+XRInputs.OnRightPrimaryButtonPressed += OnRightPrimaryDown;
+XRInputs.OnLeftPrimaryButtonReleased += OnLeftPrimaryUp;
+
+XRInputs.OnRightSecondaryButtonPressed += OnRightSecondaryDown;
+XRInputs.OnLeftSecondaryButtonReleased += OnLeftSecondaryUp;
+
+// only left hand menu button
 XRInputs.OnMenuButtonPressed += OnMenuDown;
 XRInputs.OnMenuButtonReleased += OnMenuUp;
-XRInputs.OnLeftHandDisconnect += OnLeftControllerDisconnect;
-XRInputs.OnRightHandDisconnect += OnRightControllerDisconnect;
-```
 
+XRInputs.OnRightControllerDisconnect += OnRightControllerDisconnection;
+XRInputs.OnLeftControllerReconnect += OnLeftControllerReconnection;
+```
+### Make sure the functions you call have
+```csharp
+public void Function(XRHand Hand)
+```
 ## Callings
 
 ### Grip : Side Button
