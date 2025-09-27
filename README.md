@@ -29,9 +29,6 @@ XRInputs.OnLeftSecondaryButtonReleased += OnLeftSecondaryUp;
 // only left hand menu button
 XRInputs.OnMenuButtonPressed += OnMenuDown;
 XRInputs.OnMenuButtonReleased += OnMenuUp;
-
-XRInputs.OnRightControllerDisconnect += OnRightControllerDisconnection;
-XRInputs.OnLeftControllerReconnect += OnLeftControllerReconnection;
 ```
 ## Callings
 
