@@ -5,7 +5,7 @@
 
 To Use XRInputs You Gotta do 
 ```csharp
-using XRInputs;
+using XRInput;
 ```
 
 ## Actions
